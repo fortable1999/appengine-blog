@@ -1,0 +1,9 @@
+{% extends "templates/blogs/site_base.html" %}
+{% block body_main %}
+<form action="/editor" method="post">
+	<div>Title: <input type="text" name="title"><br></div>
+	<div><textarea id="editor" name="text" rows="3" cols="60"></textarea></div>
+	<div><input type="submit" value="Post"></div>
+</form>
+
+{% endblock %}
